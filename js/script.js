@@ -1,15 +1,8 @@
-const form = document.getElementById('form');
-const inputText = document.getElementById("campo");
 
+let inputText = document.getElementById("campo");
+let numberValue = inputText.value
+let paragraph = document.createElement("p");
+let text = document.createTextNode("The number converted to decimal is: ");
 
-
-
-
-
-
-form.addEventListener('submit', function(e){
-    console.log(inputText.value);
-    e.preventDefault();
-});
-
-
+paragraph.appendChild(text);
+document.body.appendChild(paragraph);
