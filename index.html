@@ -23,10 +23,13 @@
             margin-top: 15px;
             margin-left: 15px;
         }
-        #form{
+        #formNumber{
             margin-top: 15px;
             margin-left: 15px
-            
+        }
+        #btnSubmit{
+            width: 60px;
+            background-color: rgb(25, 144, 255);
         }
        
         
@@ -40,10 +43,12 @@
     <section>
         <h1 class="h1">This is a binary number converter</h1>
         <p>Enter a binary number in the field below to find it decimal equivalent.</p>
-        <form id="form">
-            <input type="text" id="campo" name="nome">
-            <input type="submit" value="Enviar">
+        <form id="formNumber">
+            <label for="">Binary number:</label><br>
+            <input type="text" id="campo" name="name">
+            <button id="btnSubmit">Submit</button>
         </form>
+        <p id="result">Result: </p><br>
     </section>
 
 
