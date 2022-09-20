@@ -6,46 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary number convertes</title>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .h1 {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background-color:rgba(0,0,0,0.5);
-            text-align: center;
-            padding: 10px;
-            text-transform: uppercase;
-        }
-        p{
-            margin-top: 15px;
-            margin-left: 15px;
-        }
-        #formNumber{
-            margin-top: 15px;
-            margin-left: 15px
-        }
-        #btnSubmit{
-            width: 60px;
-            background-color: rgb(25, 144, 255);
-        }
-       
-        
-    </style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
-
 <body>
-    <section>
+    <header id="he">
         <h1 class="h1">This is a binary number converter</h1>
+        <p>By Guilherme Cardoso</p>
+    </header>
+    <section>
         <p>Enter a binary number in the field below to find it decimal equivalent.</p>
         <form id="formNumber">
-            <label for="">Binary number:</label><br>
-            <input type="text" id="campo" name="name">
+            <label ids="lable-field"for="field">Binary number:</label><br>
+            <input type="text" id="field" name="name">
             <button id="btnSubmit">Submit</button>
         </form>
         <p id="result">Result: </p><br>
