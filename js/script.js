@@ -6,13 +6,25 @@ btnSubmit.addEventListener("click", function(event){
 
     const frmNumber = document.querySelector("#formNumber");
     const userInput = frmNumber.name.value;
-    const binaryNumber = [userInput.length]
-    // let sizeBinaryNumber = binaryNumber.length;
 
-    for (let i = 0; i <= binaryNumber.length; i++){
-        console.log(i);
+    function createArrayBinary(strValue){
+        const arrayStrBorkenBinaryNumber = strValue.split("");
+        const arrayIntBrokenBinaryNumber = [];
+        for(i = arrayStrBorkenBinaryNumber.length -1; i >= 0 ; i--){
+            arrayIntBrokenBinaryNumber.push(parseInt(arrayStrBorkenBinaryNumber[i]));
+        }
+        return arrayIntBrokenBinaryNumber;    
     }
-    console.log(typeof(binaryNumber.length))
-    document.querySelector("#result").innerHTML += binaryNumber;
+    const arrayBinary = createArrayBinary(userInput);
+
+    function calculateBinaryNumber(intArrayValue){
+        let sumArrayBinary = 0;
+        for(i = 0; i < intArrayValue.length; i++){
+            sumArrayBinary += intArrayValue[i] * 2**i;
+        }
+        return sumArrayBinary;
+    }
+    const decimalNumber = calculateBinaryNumber(arrayBinary);
+    document.querySelector("#result").innerHTML += decimalNumber;
 
 })
