@@ -5,7 +5,7 @@ btnSubmit.addEventListener("click", function(event){
     event.preventDefault();
 
     const frmNumber = document.querySelector("#formNumber");
-    const userInput = frmNumber.name.value;
+    const userInput = frmNumber.binaryNumber.value;
 
     function createArrayBinary(strValue){
         const arrayStrBorkenBinaryNumber = strValue.split("");
