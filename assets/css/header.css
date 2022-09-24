@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header-page{
+    background-color: #80aaff;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    color: white;
+}

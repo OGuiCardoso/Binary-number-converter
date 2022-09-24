@@ -6,23 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary number convertes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/calculate.css">
 </head>
 
 <body>
     <div>
-        <header id="header-page">
+        <header class="header-page">
             <h1 class="h1">This is a binary number converter</h1>
             <p>By Guilherme Cardoso</p>
         </header>
     </div>
-    <section id="converterMain">
+    <section>
         <div id="headerBody">
             <h2>Converting number</h2>
             <p>Enter a binary number in the field below to find it decimal equivalent.</p>
         </div>
-        <form id="formNumber">
-            <div id="divFormNumber">
+    </section>
+    <section id="converterMain">
+        <form class="form-number">
+            <div class="divFormNumber">
                 <div>
                     <label class="lableInput" for="binaryNumber">Binary number:</label><br>
                     <input type="text" id="binaryNumber" class="inputsNumbers" name="binaryNumber"
@@ -30,10 +33,9 @@
                 </div>
                 <div>
                     <label class="lableInput" for="DecimalNumber">Decimal number</label><br>
-                    <input type="text" id="DecimalNumber" class="inputsNumbers" name="DecimalNumber"
-                        placeholder="Binary number">
+                    <input type="text" id="decimalNumber" class="inputsNumbers" name="decimalNumber" placeholder="Decimal number" required="true">
                 </div>
-                <div id="divBtnSubmit" S>
+                <div id="divBtnSubmit" >
                     <button id="btnSubmit">To converter</button>
                 </div>
             </div>
@@ -42,7 +44,7 @@
     </section>
 
 
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

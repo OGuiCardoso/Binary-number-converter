@@ -4,19 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-#header-page{
-    background-color: #80aaff;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    color: white;
-}
 
 #btnSubmit {
     width: 90px;
     background-color: white;
     cursor: pointer;
-
 }
 
 .lableInput{
@@ -28,19 +20,20 @@
 .inputsNumbers{
     width: 250px;
 }
-#formNumber{
+.form-number{
     margin-top: 50px;
-    background-color: ghostwhite;
+    background-color: rgb(238, 238, 238);
     height: 300px;
     align-items: center;
 }
-#divFormNumber{
+.divFormNumber{
     width: 250px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+
 }
-#divFormNumber div{
+.divFormNumber div{
     margin-top: 20px;
 }
 #divBtnSubmit{
