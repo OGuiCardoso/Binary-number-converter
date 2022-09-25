@@ -5,39 +5,43 @@
     font-family: sans-serif;
 }
 
-#btnSubmit {
-    width: 90px;
-    background-color: white;
-    cursor: pointer;
-}
-
 .lableInput{
     cursor: pointer;
     font-style: italic;
     font-size: 30px;
-    justify-content: center;
 }
-.inputsNumbers{
+.input-numbers{
     width: 250px;
+    height: 30px;
+}
+.input-numbers:focus{
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
+    outline: none;
+    border: 1.5px solid black;
 }
 .form-number{
     margin-top: 50px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(219, 219, 219);
     height: 300px;
     align-items: center;
 }
 .divFormNumber{
     width: 250px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
-
+    align-items: center;
 }
 .divFormNumber div{
     margin-top: 20px;
 }
-#divBtnSubmit{
+#divBtn{
     text-align: center;
+}
+.btn {
+    width: 122px;
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
 }
 #headerBody{
     margin-left: 50px;

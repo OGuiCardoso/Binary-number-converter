@@ -1,6 +1,6 @@
 
-let btnSubmit = document.querySelector("#btnSubmit");
-const frmNumbers = document.querySelector(".form-number");
+const btnSubmit = document.querySelector("#btnSubmit");
+const btnClear = document.querySelector("#btn-clear");
 
 btnSubmit.addEventListener("click", function(event){
     event.preventDefault();
@@ -26,9 +26,10 @@ if(userInputBinary !== ''){
     const arrayBinary = createArrayBinary(userInputBinary);
     const decimalNumber = calculateBinaryNumber(arrayBinary);
     document.querySelector("#decimalNumber").value = '';
-    document.querySelector("#decimalNumber").value += decimalNumber;
+    document.querySelector("#decimalNumber").value = decimalNumber;
 }
-else{
+else
+if(userImputDecimal !== ""){
     function ArrayBinary(inputDecimal){
         inputDecimal = parseInt(inputDecimal);
         let arrayIntBokenDecimalNumber = [];
@@ -60,4 +61,14 @@ else{
     const decimalNumberConverted = parseInt(decimalStrNumberConverted.join().replace(/,/g, ""));
     document.querySelector("#binaryNumber").value = decimalNumberConverted;
 }
+else{
+    document.querySelector("#binaryNumber").value = NaN;
+    document.querySelector("#decimalNumber").value = NaN;
+}
+})
+btnClear.addEventListener("click", function(event){
+    event.preventDefault();
+    document.querySelector("#binaryNumber").value = "";
+    document.querySelector("#decimalNumber").value = "";
+
 })

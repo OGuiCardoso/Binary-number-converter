@@ -10,4 +10,14 @@
     padding: 20px;
     justify-content: space-between;
     color: white;
+
+}
+.text-header:hover{
+    color: rgb(27, 37, 124)
+}
+.text-header{
+    transition: all 600ms ease-in;
+}
+#header-main-text{
+    text-transform: uppercase;
 }

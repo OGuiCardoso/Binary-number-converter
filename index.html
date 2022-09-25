@@ -8,13 +8,14 @@
     <title>Binary number convertes</title>
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/calculate.css">
+    <link rel="stylesheet" href="assets/css/articles.css">
 </head>
 
 <body>
     <div>
         <header class="header-page">
-            <h1 class="h1">This is a binary number converter</h1>
-            <p>By Guilherme Cardoso</p>
+            <h1 class="text-header" id="header-main-text">This is a binary number converter</h1>
+            <p class="text-header">By Guilherme Cardoso</p>
         </header>
     </div>
     <section>
@@ -25,24 +26,31 @@
     </section>
     <section id="converterMain">
         <form class="form-number">
+
             <div class="divFormNumber">
                 <div>
                     <label class="lableInput" for="binaryNumber">Binary number:</label><br>
-                    <input type="text" id="binaryNumber" class="inputsNumbers" name="binaryNumber"
+                    <input type="text" id="binaryNumber" class="input-numbers" name="binaryNumber"
                         placeholder="Binary number">
                 </div>
                 <div>
                     <label class="lableInput" for="DecimalNumber">Decimal number</label><br>
-                    <input type="text" id="decimalNumber" class="inputsNumbers" name="decimalNumber" placeholder="Decimal number" required="true">
+                    <input type="text" id="decimalNumber" class="input-numbers" name="decimalNumber"
+                        placeholder="Decimal number" required="true">
                 </div>
-                <div id="divBtnSubmit" >
-                    <button id="btnSubmit">To converter</button>
+                <div id="divBtn">
+                    <button id="btn-clear" class="btn">Clear</button>
+                    <button id="btnSubmit" class="btn">To converter</button>
                 </div>
             </div>
         </form>
-        <p id="result">Result: </p><br>
     </section>
-
+    <section>
+        <article>
+            <p><a href="https://en.wikipedia.org/wiki/Binary_number">Do you know bynary numbers?</a>
+            <a href="#">test</a></p>
+        </article>
+    </section>
 
     <script src="assets/js/script.js"></script>
 </body>
