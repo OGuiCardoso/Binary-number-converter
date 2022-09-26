@@ -7,13 +7,19 @@
 .header-page{
     background-color: #80aaff;
     display: flex;
-    padding: 20px;
-    justify-content: space-between;
+    height: 80px;
+    align-items: center;
     color: white;
-
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .text-header:hover{
-    color: rgb(27, 37, 124)
+    color: rgb(207, 207, 207)
 }
 .text-header{
     transition: all 600ms ease-in;
