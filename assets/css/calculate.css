@@ -23,17 +23,19 @@
     margin-top: 50px;
     background-color: rgb(219, 219, 219);
     height: 300px;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 .divFormNumber{
     width: 250px;
-    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
 }
-.divFormNumber div{
+.divFormNumber div:nth-child(2n),
+.divFormNumber div:nth-child(3n){
     margin-top: 20px;
+    justify-content: center;
 }
 #divBtn{
     text-align: center;
