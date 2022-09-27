@@ -4,36 +4,40 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body * ::selection{
+    background: #5c5c5c;
+    color: white;
+}
 
 .lableInput{
     cursor: pointer;
-    font-style: italic;
+    color: white;
     font-size: 30px;
 }
 .input-numbers{
-    width: 250px;
+    width: 300px;
     height: 30px;
 }
 .input-numbers:focus{
     /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);*/
     outline: none;
-    border: 1.5px solid black;
+    border: 1.5px solid rgb(255, 255, 255);
 }
 .form-number{
-    background-color: rgb(219, 219, 219);
-    height: 300px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: black;
 }
 .divFormNumber{
-    width: 250px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
 .divFormNumber div:nth-child(2n),
 .divFormNumber div:nth-child(3n){
-    margin-top: 20px;
+    margin-top: 30px;
     justify-content: center;
 }
 #divBtn{
@@ -45,8 +49,12 @@
     cursor: pointer;
 }
 #headerBody{
-    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 .footer{
     height: 100px;
@@ -61,12 +69,32 @@
     text-align: center;
     color:white;
 }
-.separator{
-    margin:20px 0;
+.converter-main div h2::after{
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 100px;
+    content: " ";
+    margin-left: -50px;
+    position: absolute;
+    background: #72c02c;
 }
-.converter-main div{
-    background-color:  rgb(219, 219, 219);
-    align-items: center;
-    justify-content: center;
+.converter-main-title{
+    z-index: 1;
+    position: relative;
     text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
+.know-more{
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.know-more div{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
