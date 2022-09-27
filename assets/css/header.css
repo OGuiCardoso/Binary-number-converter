@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 .header-page{
-    background-color: #80aaff;
+    background-color:#72c02c;
     display: flex;
     height: 80px;
     align-items: center;
@@ -26,4 +26,17 @@
 }
 #header-main-text{
     text-transform: uppercase;
+}
+.container-separator{
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.separator{
+    width: 150px;
+}
+hr{
+    height: 3px;
+    background-color:#72c02c;
 }

@@ -20,7 +20,6 @@
     border: 1.5px solid black;
 }
 .form-number{
-    margin-top: 50px;
     background-color: rgb(219, 219, 219);
     height: 300px;
     display: flex;
@@ -49,7 +48,25 @@
     margin-left: 50px;
     margin-top: 50px;
 }
+.footer{
+    height: 100px;
+    background-color:#72c02c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container-footer{
-    height: 150px;
-    background-color: #80aaff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+}
+.separator{
+    margin:20px 0;
+}
+.converter-main div{
+    background-color:  rgb(219, 219, 219);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

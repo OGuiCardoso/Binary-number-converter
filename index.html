@@ -16,7 +16,6 @@
         <header class="header-page">
             <div class="container-header">
                 <h1 class="text-header" id="header-main-text">This is a binary number converter</h1>
-                <p class="text-header">By Guilherme Cardoso</p>
             </div>
         </header>
     </div>
@@ -26,7 +25,15 @@
             <p>Enter a binary number in the field below to find it decimal equivalent.</p>
         </div>
     </section>
-    <section id="converterMain">
+    <div class="container-separator">
+        <div class="separator">
+            <hr>
+        </div>
+    </div>
+    <section class="converter-main">
+        <div>
+            <h2>Conversion</h2>
+        </div>
         <form class="form-number">
 
             <div class="divFormNumber">
@@ -36,9 +43,9 @@
                         placeholder="Binary number">
                 </div>
                 <div>
-                    <label class="lableInput" for="DecimalNumber">Decimal number</label><br>
+                    <label class="lableInput" for="decimalNumber">Decimal number</label><br>
                     <input type="text" id="decimalNumber" class="input-numbers" name="decimalNumber"
-                        placeholder="Decimal number" required="true">
+                        placeholder="Decimal number">
                 </div>
                 <div id="divBtn">
                     <button id="btn-clear" class="btn">Clear</button>
@@ -47,26 +54,34 @@
             </div>
         </form>
     </section>
-    <section>
-        <article class="math-exemple">
-            <p>A <b>binary number</b> is a number expressed in the base-2 numeral system or binary numeral system, a
-                method of mathematical expression which uses only two symbols: typically "0" (zero) and "1" (one).</p>
-            <div class="container-math">
-                <div class="exemple-calculete">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ft6PWejT1Rve-57FO2YtBVDtqo4AmLRwjg&usqp=CAU"
-                        alt="">
-                </div>
+    <article class="math-exemple">
+        <div class="container-text-math">
+            <div>
+                <h3>Calculate exemple</h3>
+                <p>A <b>binary number</b> is a number expressed in the base-2 numeral system or binary numeral
+                    system, a
+                    method of mathematical expression which uses only two symbols: typically "0" (zero) and "1"
+                    (one).
+                </p>
             </div>
-        </article>
-        <article>
-            <p><a href="https://en.wikipedia.org/wiki/Binary_number">Do you know bynary numbers?</a>
-                <a href="#">test</a>
-            </p>
-        </article>
-    </section>
+        </div>
+        <div class="container-math">
+            <div class="exemple-calculete">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ft6PWejT1Rve-57FO2YtBVDtqo4AmLRwjg&usqp=CAU"
+                    alt="">
+            </div>
+        </div>
+    </article>
+    <article>
+        <h3>know more about binary numbers</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Binary_number">Do you know bynary numbers?</a>
+            <a href="#">test</a>
+        </p>
+    </article>
     <footer class="footer">
         <div class="container-footer">
-            ss
+            <p>09/27/2022</p>
+            <p>Guilherme Cardoso de Moraes</p>
         </div>
     </footer>
 

@@ -18,15 +18,24 @@ a:active{
     height: 180px;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+
+}
+.container-text-math{
+    margin: 20px auto;
+}
+.container-text-math div{
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 img{
     width: 328px;
     height: 156px;
 }
-.math-exemple > p{
-    color: rer;
-    margin-top: 25px;
-    margin-left: 75px;
-    margin-right: 50%;
+
+.math-exemple{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
