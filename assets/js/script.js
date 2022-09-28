@@ -2,73 +2,54 @@
 const btnSubmit = document.querySelector("#btnSubmit");
 const btnClear = document.querySelector("#btn-clear");
 
+
+
 btnSubmit.addEventListener("click", function(event){
     event.preventDefault();
     const frmNumber = document.querySelector(".form-number");
     const userInputBinary = frmNumber.binaryNumber.value;
-    const userImputDecimal = frmNumber.decimalNumber.value;
-if(userInputBinary !== ''){
-    function createArrayBinary(strValue){
-        const arrayStrBorkenBinaryNumber = strValue.split("");
-        const arrayIntBrokenBinaryNumber = [];
-        for(i = arrayStrBorkenBinaryNumber.length -1; i >= 0 ; i--){
-            arrayIntBrokenBinaryNumber.push(parseInt(arrayStrBorkenBinaryNumber[i]));
+    const userInputDecimal = frmNumber.decimalNumber.value;
+    const decimalNumber = parseInt(userInputBinary, 2).toString(10);
+    const binaryNumber = parseInt(userInputDecimal, 10).toString(2);
+    let verified = true;
+
+    const arrayTestBinary = userInputBinary.split("");
+    for (let counter = 0; counter < arrayTestBinary.length; counter++){
+        if (arrayTestBinary[counter] !== "0" & arrayTestBinary[counter] !== "1"){
+            verified = false;
+            alert("Enter only 0 (zero) and 1 (one)");
+            break;
         }
-        return arrayIntBrokenBinaryNumber;    
     }
-    function calculateBinaryNumber(intArrayValue){
-        let sumArrayBinary = 0;
-        for(i = 0; i < intArrayValue.length; i++){
-            sumArrayBinary += intArrayValue[i] * 2**i;
+    const arrayTestDecimal = userInputDecimal.split("");
+    for (counter = 0; counter < arrayTestDecimal.length; counter++){
+        console.log(arrayTestDecimal[counter]);
+        if(arrayTestDecimal[counter] === "," || arrayTestDecimal[counter] ==="."){
+            verified = false;
+            alert("Enter only whole numbers")
+            break;
         }
-        return sumArrayBinary;
     }
-    const arrayBinary = createArrayBinary(userInputBinary);
-    const decimalNumber = calculateBinaryNumber(arrayBinary);
-    document.querySelector("#decimalNumber").value = '';
-    document.querySelector("#decimalNumber").value = decimalNumber;
-}
-else
-if(userImputDecimal !== ""){
-    function ArrayBinary(inputDecimal){
-        inputDecimal = parseInt(inputDecimal);
-        let arrayIntBokenDecimalNumber = [];
-        let i = 0;
-        while(true){
-            if(i < 1){
-                arrayIntBokenDecimalNumber.push(inputDecimal % 2);
-                i += 1;
-                continue;
-             }
-            inputDecimal = (inputDecimal - inputDecimal % 2) / 2;
-            arrayIntBokenDecimalNumber.push(inputDecimal % 2);
-            i += 1;
-            if(inputDecimal === 1){
-                break;
-            }
-        }
-    return arrayIntBokenDecimalNumber;
-}
-    function inverteArray(arrayNumbersBinary){
-        let arrayInverted = [];
-        for(i = arrayNumbersBinary.length; i >= 0 ; i--){
-            arrayInverted.push(arrayNumbersBinary[i]);
-        }
-    return arrayInverted;
-}
-    const binaryNumberConverted = ArrayBinary(userImputDecimal);
-    const decimalStrNumberConverted = inverteArray(binaryNumberConverted);
-    const decimalNumberConverted = parseInt(decimalStrNumberConverted.join().replace(/,/g, ""));
-    document.querySelector("#binaryNumber").value = decimalNumberConverted;
-}
-else{
-    document.querySelector("#binaryNumber").value = NaN;
-    document.querySelector("#decimalNumber").value = NaN;
+
+if(verified === true){
+    if(userInputDecimal == "" & userInputBinary == ""){
+        document.querySelector("#binaryNumber").value = "";
+        document.querySelector("#decimalNumber").value = "";
+    }
+    else if(userInputDecimal === ""){
+        document.querySelector("#decimalNumber").value = decimalNumber;
+    }
+    else if(userInputBinary === ""){
+        document.querySelector("#binaryNumber").value = binaryNumber;
+    }
+    else if(userInputDecimal !== "" & userInputBinary !== ""){
+        alert("Clear the fields!");
+    }
 }
 })
+
 btnClear.addEventListener("click", function(event){
     event.preventDefault();
     document.querySelector("#binaryNumber").value = "";
     document.querySelector("#decimalNumber").value = "";
-
 })
