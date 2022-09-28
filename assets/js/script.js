@@ -24,7 +24,7 @@ btnSubmit.addEventListener("click", function(event){
     const arrayTestDecimal = userInputDecimal.split("");
     for (counter = 0; counter < arrayTestDecimal.length; counter++){
         console.log(arrayTestDecimal[counter]);
-        if(arrayTestDecimal[counter] === "," || arrayTestDecimal[counter] ==="."){
+        if(arrayTestDecimal[counter] === "," || arrayTestDecimal[counter] === "."){
             verified = false;
             alert("Enter only whole numbers")
             break;
